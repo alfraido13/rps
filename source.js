@@ -15,3 +15,12 @@ function playRound(ps, cs){
         console.log( "It's a draw");
     } else console.log ("Enter: Rock, paper or scissors")
 }
+const myArray = ['rock', 'paper', 'scissors'];  
+function getComputerChoice(){
+
+const computerChoice = myArray[Math.floor(Math.random() * myArray.length)]
+return computerChoice;
+}
+const ps = "rock";
+const cs = getComputerChoice();
+console.log(playRound(ps, cs));
