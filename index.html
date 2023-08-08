@@ -9,19 +9,28 @@
 </head>
 <body>
    /* <script>
+    let playerScore = 0;
+    let computerScore=0;
+    //let winner = ''
     function playRound(ps, cs){
     if (ps==='rock' && cs ==='paper'){
-        console.log( "You Lose, paper beats rock");
+        console.log( "Computer wins, paper beats rock");
+        computerScore++
     } else     if (ps==='rock' && cs ==='scissors'){
-        console.log( "You win, rock beats scissors");
+        console.log( "Player wins, rock beats scissors");
+        playerScore++
     }  else     if (ps==='scissors' && cs ==='paper'){
-        console.log( "You win, scissors beats paper");
+        console.log( "Player wins, scissors beats paper");
+        playerScore++
     }  else     if (ps==='scissors' && cs ==='rock'){
-        console.log( "You Lose, rock beats scissors");
+        console.log( "Computer wins,, rock beats scissors");
+        computerScore++
     }  else     if (ps==='paper' && cs ==='rock'){
-        console.log( "You win, paper beats rock");
+        console.log( "Player wins, paper beats rock");
+        playerScore++
     }  else     if (ps==='paper' && cs ==='scissors'){
-        console.log( "You Lose, scissors beats paper");
+        console.log( "Computer wins,, scissors beats paper");
+        computerScore++
     }  else     if (ps === cs){
         console.log( "It's a draw");
     } else console.log ("Enter: Rock, paper or scissors")
@@ -35,6 +44,7 @@ return computerChoice;
 const ps = 'rock';
 const cs = getComputerChoice();
 console.log(playRound(ps, cs));
+console.log("Player score: " + playerScore +" - " +"Computer Score: "+ computerScore)
 </script>
     
 </body>
